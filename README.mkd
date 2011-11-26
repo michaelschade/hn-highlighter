@@ -1,0 +1,52 @@
+Created by [Michael Schade](http://mschade.me/)
+([@michaelschade](https://twitter.com/intent/user?screen_name=michaelschade)).
+
+Introduction
+============
+
+Makes new comments on [Hacker News](http://news.ycombinator.com/) posts easier
+to identify.
+
+Installation
+============
+
+To install this, all you need to do is grab the
+[user script](https://raw.github.com/michaelschade/hn-newcomments/master/src/hn-newcomments.user.js).
+
+Google Chrome will support this by default. For other browsers, you will need
+a user script extension:
+
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+* [Safari](http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari/)
+* [Internet Explorer](http://www.bhelpuri.net/Trixie/)
+
+Note that I've only tried this on Google Chrome and Firefox. Your mileage may
+vary. If you find issues, please let me know (see `Support` below) and I'll
+update accordingly.
+
+Usage
+=====
+
+Simply view posts on [Hacker News](http://news.ycombinator.com/).
+
+Support
+=======
+
+To the best of my knowledge, this works well and in any browser that supports
+user scripts.
+
+If you run into a situation where it is failing, drop me a note at github [-@-]
+mschade [-dot-] me, tweet me @michaelschade, or reach out in any other way
+and I'll be happy to help. Pull requests are an even better option for getting
+something in the codebase.
+
+License
+=======
+
+We like the MIT license. See `LICENSE`.
+
+Acknowledgements
+================
+
+* Thanks to [Eric Vold](http://erikvold.com/blog/index.cfm/2010/6/14/using-jquery-with-a-user-script)
+  for showing how to use jQuery with Google Chrome.
