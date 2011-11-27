@@ -4,6 +4,17 @@ Created by [Michael Schade](http://mschade.me/)
 Introduction
 ============
 
+Examples
+--------
+
+Pictures are best at explaining, so here are two:
+
+* [New and Updated Posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
+* [New Comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
+
+Description
+-----------
+
 This user script is meant to provide an improvement to the
 [Hacker News](http://news.ycombinator.com/) by making new or updated posts
 clearly visible.
