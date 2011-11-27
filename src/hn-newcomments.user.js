@@ -103,11 +103,12 @@ function main() {
             if (pid in localStorage) { // already seen
                 var ocount = JSON.parse(localStorage.getItem(pid));
 
+                // Add notice if there are new comments ("updated post")
                 if (count > ocount) {
                     updatedPosts += 1;
                     $(this).append(' <span>').children().each(function(index) {
                         var t = '('
-                              + pluralizeText("new comment", (count - ocount))
+                              + pluralizeText("new comment", count - ocount)
                               + ')'
                               ;
                         $(this).text(t).css('background-color', C_UPDATED_POST);
