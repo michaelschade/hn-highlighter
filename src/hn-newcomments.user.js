@@ -47,7 +47,7 @@ function main() {
 
         // Try to retrieve existing set of comments for this page
         if (post in localStorage) {
-            oldComments = JSON.parse(localStorage[post]);
+            oldComments = JSON.parse(localStorage.getItem(post));
 
             // Determine new comments and mark them visually
             var newComments = comments.diff(oldComments);
@@ -72,7 +72,10 @@ function main() {
         }
 
         // Save to browser storage
-        localStorage[post] = JSON.stringify(comments);
+        localStorage.setItem(post, JSON.stringify(comments));
+    }
+
+    function processPosts() {
     }
 
     processComments();
