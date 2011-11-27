@@ -4,8 +4,12 @@ Created by [Michael Schade](http://mschade.me/)
 Introduction
 ============
 
-Makes new comments on [Hacker News](http://news.ycombinator.com/) posts easier
-to identify.
+Highlight the headers of new comments on
+[Hacker News](http://news.ycombinator.com/) posts to make identifying them
+quick and easy.
+
+This script will also update the page to specify just how many new comments
+there are.
 
 Installation
 ============
@@ -27,7 +31,7 @@ update accordingly.
 Usage
 =====
 
-Simply view posts on [Hacker News](http://news.ycombinator.com/).
+Simply view a post on [Hacker News](http://news.ycombinator.com/).
 
 Support
 =======
