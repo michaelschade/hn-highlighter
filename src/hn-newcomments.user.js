@@ -26,6 +26,21 @@ function main() {
         return s.replace("item", "").replace("?id=", "");
     }
 
+    /* Makes text plural only if count is not one. For example:
+
+       pluralizeText("new post", 0) => "0 new posts"
+       pluralizeText("new post", 1) => "1 new post"
+       pluralizeText("new post", 2) => "2 new posts"
+     */
+    function pluralizeText(text, count) {
+        var ntext  = count ? count : "No";
+        ntext     += ' ' + text;
+        if (count != 1) {
+            ntext += 's';
+        }
+        return ntext;
+    }
+
     /* Processes the comments on page to determine which, if any, are new,
        marking the new comments accordingly.
      */
@@ -53,18 +68,12 @@ function main() {
                 comheads[cid].css('background-color', NEW_COMMENT_HIGHLIGHT);
             });
 
-            /* If appropriate, update page to reflect number of new comments */
-            // New comment notification text
-            var ncomm = newComments.length ? newComments.length : "No";
-            ncomm    += " new comment";
-            if (newComments.length != 1) {
-                ncomm+= 's';
-            }
-
-            // Update page
+            /* Update top of page to reflect number of new comments. */
             var nspot = $("center > table > tbody > tr > td > br:first");
             var ntext = '<div style="margin-left: 25px; color: black;">'
-                      + '<p><strong>' + ncomm + '</strong></p></div>'
+                      + '<p><strong>'
+                      + pluralizeText("new comment", newComments.length)
+                      + '</strong></p></div>'
                       ;
             nspot.replaceWith(ntext);
         }
