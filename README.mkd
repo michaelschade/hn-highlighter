@@ -51,6 +51,8 @@ Notes
   one can quickly see when a post is updated between subsequent views of the
   page while still have an opportunity to see all new comments since last
   viewing the post itself.
+* When viewing a post for the first time, no comments are highlighted. New
+  comments after the initial view will be marked accordingly.
 
 Support
 =======
