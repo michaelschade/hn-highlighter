@@ -73,3 +73,5 @@ Acknowledgements
 
 * Thanks to [Eric Vold](http://erikvold.com/blog/index.cfm/2010/6/14/using-jquery-with-a-user-script)
   for showing how to use jQuery with Google Chrome.
+* Thanks to [Joshaven Potter](http://stackoverflow.com/q/4026828) for providing
+  an easy array difference function.
