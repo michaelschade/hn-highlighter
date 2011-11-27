@@ -10,6 +10,9 @@
 var jqURL = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js";
 
 function main() {
+    /* Options */
+    var NEW_COMMENT_HIGHLIGHT = 'yellow';
+
     /* Add ability to compute difference between two arrays.
 
        Snippet via http://stackoverflow.com/q/4026828
@@ -47,7 +50,7 @@ function main() {
             // Determine new comments and mark them visually
             var newComments = comments.diff(oldComments);
             $.each(newComments, function(index, cid) {
-                comheads[cid].css('background-color', 'yellow');
+                comheads[cid].css('background-color', NEW_COMMENT_HIGHLIGHT);
             });
 
             /* If appropriate, update page to reflect number of new comments */
