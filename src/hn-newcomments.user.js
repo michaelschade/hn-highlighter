@@ -23,11 +23,6 @@ function main() {
         return s.replace("item", "").replace("?id=", "");
     }
 
-    /* Modifies a Hacker News comment header to mark it as a new comment. */
-    function markComment(comment) {
-        comment.css('background-color', 'yellow');
-    }
-
     /* Processes the comments on page to determine which, if any, are new,
        marking the new comments accordingly.
      */
@@ -52,7 +47,7 @@ function main() {
             // Determine new comments and mark them visually
             var newComments = comments.diff(oldComments);
             $.each(newComments, function(index, cid) {
-                markComment(comheads[cid]);
+                comheads[cid].css('background-color', 'yellow');
             });
 
             /* If appropriate, update page to reflect number of new comments */
