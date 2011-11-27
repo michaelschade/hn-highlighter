@@ -2,8 +2,8 @@
 // @name          Hacker News: New Comments
 // @namespace     http://mschade.me/userscripts
 // @description   Make new comments on Hacker News more noticeable. Created by Michael Schade (@michaelschade, http://mschade.me/)
-// @match         http://news.ycombinator.com/item?id=*
-// @include       http://news.ycombinator.com/item?id=*
+// @match         http://news.ycombinator.com/*
+// @include       http://news.ycombinator.com/*
 // ==/UserScript==
 
 // URL to jQuery Library
@@ -11,7 +11,10 @@ var jqURL = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js";
 
 function main() {
     /* Options */
-    var NEW_COMMENT_HIGHLIGHT = 'yellow';
+    var   C_NEW_POST     = 'lightgreen'
+        , C_UPDATED_POST = 'yellow'
+        , C_NEW_COMMENT  = 'yellow'
+        ;
 
     /* Add ability to compute difference between two arrays.
 
@@ -65,7 +68,7 @@ function main() {
             // Determine new comments and mark them visually
             var newComments = comments.diff(oldComments);
             $.each(newComments, function(index, cid) {
-                comheads[cid].css('background-color', NEW_COMMENT_HIGHLIGHT);
+                comheads[cid].css('background-color', C_NEW_COMMENT);
             });
 
             /* Update top of page to reflect number of new comments. */
@@ -80,12 +83,76 @@ function main() {
 
         // Save to browser storage
         localStorage.setItem(post, JSON.stringify(comments));
+        localStorage.setItem("_" + post, comments.length);
     }
 
     function processPosts() {
+        var newPosts = 0, updatedPosts = 0;
+
+        $(".subtext a:nth-child(3)").each(function(index) {
+            var   pid   = "_" + getId($(this).attr('href'))
+                , count = 0
+                , ctext = $(this).text()
+                ;
+
+            if (ctext.search(/\d+/) == 0) { // "# comments" on post
+                count = JSON.parse(ctext.split(" ")[0]);
+            }
+
+            /* Determine if new or existing post; mark status */
+            if (pid in localStorage) { // already seen
+                var ocount = JSON.parse(localStorage.getItem(pid));
+
+                if (count > ocount) {
+                    updatedPosts += 1;
+                    $(this).append(' <span>').children().each(function(index) {
+                        var t = '('
+                              + pluralizeText("new comment", (count - ocount))
+                              + ')'
+                              ;
+                        $(this).text(t).css('background-color', C_UPDATED_POST);
+                    });
+                }
+            } else { // new post
+                newPosts += 1;
+                $(this).css('background-color', C_NEW_POST);
+            }
+
+            // Save post count to browser storage
+            localStorage.setItem(pid, count);
+        });
+
+        /* Update top of page to reflect number of new/updated posts. */
+        var   nspot  = $("center > table > tbody > tr:nth-child(2)")
+            , nstyle = "color: black; padding: 10px; padding-left: 35px;"
+            , ntext  = '<td><p style="' + nstyle + '"><strong>'
+                     + pluralizeText("new post",     newPosts)     + '. '
+                     + pluralizeText("updated post", updatedPosts) + '.'
+                     + '</strong></p></td>'
+                     ;
+        nspot.append(ntext);
     }
 
-    processComments();
+    /* Route page to proper processing logic */
+    switch (window.location.pathname) {
+        // Posts
+        case "/":
+        case "/active":
+        case "/ask":
+        case "/best":
+        case "/newest":
+        case "/news":
+        case "/noobstories":
+            processPosts();
+            break;
+        // Comments
+        case "/item":
+            processComments();
+            break;
+        // Other pages are irrelevant
+        default:
+            break;
+    }
 }
 
 /* Injects jQuery into the page and makes useable from the below Greasemonkey
