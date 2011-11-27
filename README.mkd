@@ -4,12 +4,19 @@ Created by [Michael Schade](http://mschade.me/)
 Introduction
 ============
 
-Highlight the headers of new comments on
-[Hacker News](http://news.ycombinator.com/) posts to make identifying them
-quick and easy.
+This user script is meant to provide an improvement to the
+[Hacker News](http://news.ycombinator.com/) by making new or updated posts
+clearly visible.
 
-This script will also update the page to specify just how many new comments
-there are.
+All post-listing pages will now highlight new posts (by default, in green) as
+well as all posts that have received new comments (by default, yellow), noting
+how many new comments there are.
+
+On a post page, new comments will be highlighted (by default, in yellow), and
+a note about how many new comments there are will be placed at the top of the
+page.
+
+All of this data is stored locally using browser storage.
 
 Installation
 ============
@@ -32,6 +39,9 @@ Usage
 =====
 
 Simply view a post on [Hacker News](http://news.ycombinator.com/).
+
+To customize the colors used when highlighting, feel free to edit the source
+(`lines 14-16`, top of `main`).
 
 Support
 =======
