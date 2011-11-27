@@ -68,7 +68,7 @@ something in the codebase.
 License
 =======
 
-We like the MIT license. See `LICENSE`.
+I like the MIT license. See `LICENSE`.
 
 Acknowledgements
 ================
