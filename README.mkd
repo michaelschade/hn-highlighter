@@ -22,7 +22,7 @@ Installation
 ============
 
 To install this, all you need to do is grab the
-[user script](https://raw.github.com/michaelschade/hn-newcomments/master/src/hn-newcomments.user.js).
+[user script](https://raw.github.com/michaelschade/hnpc/master/src/hnpc.user.js).
 
 Requirement: User Scripts/Greasemonkey
 --------------------------------------
