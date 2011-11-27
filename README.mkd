@@ -24,6 +24,9 @@ Installation
 To install this, all you need to do is grab the
 [user script](https://raw.github.com/michaelschade/hn-newcomments/master/src/hn-newcomments.user.js).
 
+Requirement: User Scripts/Greasemonkey
+--------------------------------------
+
 Google Chrome will support this by default. For other browsers, you will need
 a user script extension:
 
@@ -35,8 +38,8 @@ Note that I've only tried this on Google Chrome and Firefox. Your mileage may
 vary. If you find issues, please let me know (see `Support` below) and I'll
 update accordingly.
 
-Note: Web Storage
------------------
+Requirement: Web Storage
+------------------------
 
 Your browser must support Web Storage. If user script support is
 available, these browsers should work:
