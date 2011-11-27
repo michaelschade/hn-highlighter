@@ -3,11 +3,13 @@
 // @namespace     http://mschade.me/userscripts
 // @description   Make new comments on Hacker News more noticeable. Created by Michael Schade (@michaelschade, http://mschade.me/)
 // @match         http://news.ycombinator.com/*
+// @match         https://news.ycombinator.com/*
 // @include       http://news.ycombinator.com/*
+// @include       https://news.ycombinator.com/*
 // ==/UserScript==
 
 // URL to jQuery Library
-var jqURL = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js";
+var jqURL = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js";
 
 function main() {
     /* Options */
