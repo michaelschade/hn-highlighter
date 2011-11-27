@@ -89,7 +89,7 @@ function main() {
     function processPosts() {
         var newPosts = 0, updatedPosts = 0;
 
-        $(".subtext a:nth-child(3)").each(function(index) {
+        $(".subtext a:last-child").each(function(index) {
             var   pid   = "_" + getId($(this).attr('href'))
                 , count = 0
                 , ctext = $(this).text()
