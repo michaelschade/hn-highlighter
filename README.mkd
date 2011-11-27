@@ -35,10 +35,29 @@ Note that I've only tried this on Google Chrome and Firefox. Your mileage may
 vary. If you find issues, please let me know (see `Support` below) and I'll
 update accordingly.
 
+Note: Web Storage
+-----------------
+
+Your browser must support Web Storage. If user script support is
+available, these browsers should work:
+
+* Internet Explorer 8+
+* Firefox 3.5+
+* Safari 4+
+* Opera 10.5+
+* iPhone Safari
+* Android Web Browser
+
 Usage
 =====
 
+Basic
+-----
+
 Simply view a post on [Hacker News](http://news.ycombinator.com/).
+
+Appearance Customization
+------------------------
 
 To customize the colors used when highlighting, feel free to edit the source
 (`lines 14-16`, top of `main`).
