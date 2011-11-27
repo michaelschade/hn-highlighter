@@ -43,6 +43,15 @@ Simply view a post on [Hacker News](http://news.ycombinator.com/).
 To customize the colors used when highlighting, feel free to edit the source
 (`lines 14-16`, top of `main`).
 
+Notes
+=====
+
+* The number of new comments reported on the post page and those reported when
+  actually viewing the post may differ. This is intentional in the design as
+  one can quickly see when a post is updated between subsequent views of the
+  page while still have an opportunity to see all new comments since last
+  viewing the post itself.
+
 Support
 =======
 
