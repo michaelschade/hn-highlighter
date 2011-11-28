@@ -140,11 +140,13 @@ function main() {
     switch (window.location.pathname) {
         // Posts
         case "/":
+        case "/x":
         case "/active":
         case "/ask":
         case "/best":
         case "/newest":
         case "/news":
+        case "/news2":
         case "/noobstories":
             processPosts();
             break;
