@@ -35,6 +35,10 @@ Installation
 To install this, all you need to do is grab the
 [user script](https://raw.github.com/michaelschade/hnpc/master/src/hnpc.user.js).
 
+Opera users can find it
+[as an extension](https://addons.opera.com/en/addons/extensions/details/hnpc/),
+thanks to [Daniel Davis](http://twitter.com/ourmaninjapan).
+
 Requirement: User Scripts/Greasemonkey
 --------------------------------------
 
@@ -106,7 +110,11 @@ I like the MIT license. See `LICENSE`.
 Acknowledgements
 ================
 
-* Thanks to [Eric Vold](http://erikvold.com/blog/index.cfm/2010/6/14/using-jquery-with-a-user-script)
+Thanks to...
+
+* [Eric Vold](http://erikvold.com/blog/index.cfm/2010/6/14/using-jquery-with-a-user-script)
   for showing how to use jQuery with Google Chrome.
-* Thanks to [Joshaven Potter](http://stackoverflow.com/q/4026828) for providing
-  an easy array difference function.
+* [Joshaven Potter](http://stackoverflow.com/q/4026828) for providing an easy
+  array difference function.
+* [Daniel Davis](http://twitter.com/ourmaninjapan) for providing an Opera
+  extension incorporating the *hnpc* user script.
