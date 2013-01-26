@@ -1,17 +1,17 @@
-hnpc improves  [Hacker News](http://news.ycombinator.com/) by highlighting new
+hn-highlighter improves  [Hacker News](http://news.ycombinator.com/) by highlighting new
 or updated posts.
 
-![New and updated posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
-![New comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
+![New and updated posts](https://github.com/michaelschade/hn-highlighter/raw/master/examples/posts.png)
+![New comments](https://github.com/michaelschade/hn-highlighter/raw/master/examples/comments.png)
 
 Installation
 ============
 
 To install this, all you need to do is grab the
-[user script](https://raw.github.com/michaelschade/hnpc/master/src/hnpc.user.js).
+[user script](https://raw.github.com/michaelschade/hn-highlighter/master/src/hn-highlighter.user.js).
 
 Opera users can find it
-[as an extension](https://addons.opera.com/en/addons/extensions/details/hnpc/),
+[as an extension](https://addons.opera.com/en/addons/extensions/details/hn-highlighter/),
 thanks to [Daniel Davis](http://twitter.com/ourmaninjapan).
 
 Requirement: User Scripts/Greasemonkey
@@ -25,7 +25,7 @@ a user script extension:
 * [Internet Explorer](http://www.bhelpuri.net/Trixie/)
 
 Note that I've only tried this on Google Chrome and Firefox. Your mileage may
-vary. If you find issues, please [file an issue](https://github.com/michaelschade/hnpc/issues/new).
+vary. If you find issues, please [file an issue](https://github.com/michaelschade/hn-highlighter/issues/new).
 
 Supported Browsers
 ------------------
@@ -52,7 +52,7 @@ Notes
 License
 =======
 
-I like the [MIT license](https://github.com/michaelschade/hnpc/blob/master/LICENSE).
+I like the [MIT license](https://github.com/michaelschade/hn-highlighter/blob/master/LICENSE).
 
 Acknowledgements
 ================
@@ -66,4 +66,4 @@ Thanks to...
 * [Joshaven Potter](http://stackoverflow.com/q/4026828) for providing an easy
   array difference function.
 * [Daniel Davis](http://twitter.com/ourmaninjapan) for providing an Opera
-  extension incorporating the *hnpc* user script.
+  extension incorporating the *hn-highlighter* user script.
