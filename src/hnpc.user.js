@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name          Hacker News: New Comments
+// @name          Hacker News Highlighter: See new posts and comments
 // @namespace     http://mschade.me/userscripts
-// @description   Make new comments on Hacker News more noticeable. Created by Michael Schade (@michaelschade, http://mschade.me/)
+// @description   Improve [Hacker News](http://news.ycombinator.com/) by highlighting new and updated posts.
 // @match         http://news.ycombinator.com/*
 // @match         https://news.ycombinator.com/*
 // @include       http://news.ycombinator.com/*

@@ -1,27 +1,8 @@
-By [Michael Schade](http://mschade.me/) ([@sch](https://twitter.com/sch)).
+hnpc improves  [Hacker News](http://news.ycombinator.com/) by highlighting new
+or updated posts.
 
-Introduction
-============
-
-* ![New and Updated Posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
-* ![New Comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
-
-Description
------------
-
-This user script is meant to provide an improvement to the
-[Hacker News](http://news.ycombinator.com/) by making new or updated posts
-clearly visible.
-
-All post-listing pages will now highlight new posts (by default, in green) as
-well as all posts that have received new comments (by default, yellow), noting
-how many new comments there are.
-
-On a post page, new comments will be highlighted (by default, in yellow), and
-a note about how many new comments there are will be placed at the top of the
-page.
-
-All of this data is stored locally using browser storage.
+![New and updated posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
+![New comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
 
 Installation
 ============
@@ -46,32 +27,16 @@ a user script extension:
 Note that I've only tried this on Google Chrome and Firefox. Your mileage may
 vary. If you find issues, please [file an issue](https://github.com/michaelschade/hnpc/issues/new).
 
-Requirement: Web Storage
-------------------------
+Supported Browsers
+------------------
 
-Your browser must support Web Storage. If user script support is
-available, these browsers should work:
+There is user script support (either built in or
+through an extension) for these browsers:
 
 * Internet Explorer 8+
 * Firefox 3.5+
 * Safari 4+
 * Opera 10.5+
-* iPhone Safari
-* Android Web Browser
-
-Usage
-=====
-
-Basic
------
-
-Simply view a post on [Hacker News](http://news.ycombinator.com/).
-
-Appearance Customization
-------------------------
-
-To customize the colors used when highlighting, feel free to edit the source
-(`lines 14-16`, top of `main`).
 
 Notes
 =====
@@ -87,10 +52,12 @@ Notes
 License
 =======
 
-I like the MIT license. See `LICENSE`.
+I like the [MIT license](https://github.com/michaelschade/hnpc/blob/master/LICENSE).
 
 Acknowledgements
 ================
+
+By [Michael Schade](http://mschade.me/) ([@sch](https://twitter.com/sch)).
 
 Thanks to...
 
