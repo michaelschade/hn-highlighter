@@ -1,16 +1,10 @@
-Created by [Michael Schade](http://mschade.me/)
-([@michaelschade](https://twitter.com/intent/user?screen_name=michaelschade)).
+By [Michael Schade](http://mschade.me/) ([@sch](https://twitter.com/sch)).
 
 Introduction
 ============
 
-Examples
---------
-
-Pictures are best at explaining, so here are two:
-
-* [New and Updated Posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
-* [New Comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
+* ![New and Updated Posts](https://github.com/michaelschade/hnpc/raw/master/examples/posts.png)
+* ![New Comments](https://github.com/michaelschade/hnpc/raw/master/examples/comments.png)
 
 Description
 -----------
@@ -50,8 +44,7 @@ a user script extension:
 * [Internet Explorer](http://www.bhelpuri.net/Trixie/)
 
 Note that I've only tried this on Google Chrome and Firefox. Your mileage may
-vary. If you find issues, please let me know (see `Support` below) and I'll
-update accordingly.
+vary. If you find issues, please [file an issue](https://github.com/michaelschade/hnpc/issues/new).
 
 Requirement: Web Storage
 ------------------------
@@ -90,17 +83,6 @@ Notes
   viewing the post itself.
 * When viewing a post for the first time, no comments are highlighted. New
   comments after the initial view will be marked accordingly.
-
-Support
-=======
-
-To the best of my knowledge, this works well and in any browser that supports
-user scripts.
-
-If you run into a situation where it is failing, drop me a note at github [-@-]
-mschade [-dot-] me, tweet me @michaelschade, or reach out in any other way
-and I'll be happy to help. Pull requests are an even better option for getting
-something in the codebase.
 
 License
 =======
