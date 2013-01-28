@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["*://news.ycombinator.com/*"],
-      "js": ["hnpc.user.js"]
+      "js": ["hn-highlighter.user.js"]
     }
   ]
 }
