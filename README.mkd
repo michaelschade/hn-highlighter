@@ -7,12 +7,14 @@ or updated posts.
 Installation
 ============
 
-To install this, all you need to do is grab the
-[user script](https://raw.github.com/michaelschade/hn-highlighter/master/src/hn-highlighter.user.js).
+The easiest way to install this is by grabbing the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/hacker-news-highlighter/lodgohiooagialakkkgncicmjenljenh).
 
-Opera users can find it
-[as an extension](https://addons.opera.com/en/addons/extensions/details/hn-highlighter/),
+Opera users can also find it
+[as an extension](https://addons.opera.com/en/addons/extensions/details/hnpc/),
 thanks to [Daniel Davis](http://twitter.com/ourmaninjapan).
+
+Otherwise, you can grab the [user script](https://raw.github.com/michaelschade/hn-highlighter/master/hn-highlighter.user.js)
+for extensions like Greasemonkey.
 
 Requirement: User Scripts/Greasemonkey
 --------------------------------------
