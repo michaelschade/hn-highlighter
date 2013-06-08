@@ -13,7 +13,7 @@ Opera users can also find it
 [as an extension](https://addons.opera.com/en/addons/extensions/details/hnpc/),
 thanks to [Daniel Davis](http://twitter.com/ourmaninjapan).
 
-Otherwise, you can grab the [user script](https://raw.github.com/michaelschade/hn-highlighter/master/hn-highlighter.user.js)
+Otherwise, you can grab the [user script](https://raw.github.com/michaelschade/hn-highlighter/master/src/highlighter.user.js)
 for extensions like Greasemonkey.
 
 Requirement: User Scripts/Greasemonkey
